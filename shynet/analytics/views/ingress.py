@@ -36,6 +36,7 @@ def ingress(request, service_uuid, identifier, tracker, payload):
         identifier=identifier,
     )
 
+
 class ValidateServiceOriginsMixin:
     def dispatch(self, request, *args, **kwargs):
         try:

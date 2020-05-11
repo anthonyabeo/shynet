@@ -18,6 +18,7 @@ class Command(BaseCommand):
 
     def check_migrations(self):
         from django.db.migrations.executor import MigrationExecutor
+
         try:
             executor = MigrationExecutor(connections[DEFAULT_DB_ALIAS])
         except OperationalError:
@@ -26,24 +27,31 @@ class Command(BaseCommand):
         except ImproperlyConfigured:
             # No databases are configured (or the dummy one)
             return True
-        
+
         if executor.migration_plan(executor.loader.graph.leaf_nodes()):
             return True
-        
+
         return False
-    
-    
+
     def handle(self, *args, **options):
         migration = self.check_migrations()
 
         admin, hostname, whitelabel = [True] * 3
         if not migration:
             admin = not User.objects.all().exists()
-            hostname = not Site.objects.filter(domain__isnull=False).exclude(domain__exact="").exclude(domain__exact="example.com").exists()
-            whitelabel = not Site.objects.filter(name__isnull=False).exclude(name__exact="").exclude(name__exact="example.com").exists()
+            hostname = (
+                not Site.objects.filter(domain__isnull=False)
+                .exclude(domain__exact="")
+                .exclude(domain__exact="example.com")
+                .exists()
+            )
+            whitelabel = (
+                not Site.objects.filter(name__isnull=False)
+                .exclude(name__exact="")
+                .exclude(name__exact="example.com")
+                .exists()
+            )
 
         self.stdout.write(
-            self.style.SUCCESS(
-                f"{migration} {admin} {hostname} {whitelabel}"
-            )
+            self.style.SUCCESS(f"{migration} {admin} {hostname} {whitelabel}")
         )
