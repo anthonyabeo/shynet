@@ -5,8 +5,7 @@ python:
   - "3.8"
 
 env:
-  - SQLITE=True
-  - SHYNET_ADMIN_EMAIL=admin@admin.com
+  - SQLITE=True SHYNET_ADMIN_EMAIL=admin@admin.com
 
 # install pipenv before installing dependencies.
 before_install:

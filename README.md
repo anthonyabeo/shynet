@@ -13,6 +13,8 @@
 
 <br>
 
+[![Build Status](https://travis-ci.org/anthonyabeo/shynet.svg?branch=master)](https://travis-ci.org/anthonyabeo/shynet)
+
 ## Motivation
 
 There are a _lot_ of web analytics tools. Unfortunately, most of them come with the following caveats:
