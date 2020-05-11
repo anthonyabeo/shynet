@@ -1,0 +1,20 @@
+language: python
+python:
+  - "3.6" # current default Python on Travis CI
+  - "3.7"
+  - "3.8"
+
+# install pipenv before installing dependencies.
+before_install:
+  - pip3 install pipenv
+
+# command to install dependencies
+install:
+  - pipenv install
+
+before_script:
+  - cd shynet/
+
+# command to run tests
+script:
+  - coverage run --source='.' manage.py test
