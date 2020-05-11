@@ -4,6 +4,10 @@ python:
   - "3.7"
   - "3.8"
 
+env:
+  - SQLITE=True
+  - SHYNET_ADMIN_EMAIL=admin@admin.com
+
 # install pipenv before installing dependencies.
 before_install:
   - pip3 install pipenv
@@ -16,6 +20,7 @@ install:
 before_script:
   - cd shynet/
   - ./manage.py migrate
+  - ./manage.py collectstatic
 
 # command to run tests
 script:
