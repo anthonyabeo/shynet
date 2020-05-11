@@ -15,6 +15,7 @@ install:
 
 before_script:
   - cd shynet/
+  - ./manage.py migrate
 
 # command to run tests
 script:
