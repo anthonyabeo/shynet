@@ -25,6 +25,7 @@ django-redis-cache = "*"
 pycountry = "*"
 ipaddress = "*"
 coverage = "*"
+python-coveralls = "*"
 
 [pipenv]
 allow_prereleases = true

@@ -13,7 +13,7 @@
 
 <br>
 
-[![Build Status](https://travis-ci.org/anthonyabeo/shynet.svg?branch=master)](https://travis-ci.org/anthonyabeo/shynet)
+[![Build Status](https://travis-ci.org/anthonyabeo/shynet.svg?branch=master)](https://travis-ci.org/anthonyabeo/shynet)  [![Coverage Status](https://coveralls.io/repos/github/anthonyabeo/shynet/badge.svg?branch=master)](https://coveralls.io/github/anthonyabeo/shynet?branch=master)
 
 ## Motivation
 
