@@ -3,8 +3,6 @@ from django.test import TestCase
 from core.models import Service, User
 from ipaddress import IPv4Network
 
-from re import Pattern
-
 
 class ServiceModelTest(TestCase):
     fixtures = [
