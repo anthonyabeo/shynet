@@ -136,3 +136,5 @@ secrets.yml
 .vscode
 .DS_Store
 compiledstatic/
+
+tests/server.py
