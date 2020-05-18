@@ -1,0 +1,65 @@
+[
+{
+    "model": "analytics.session",
+    "pk": "52b6bd51-1fec-46c5-bf9e-ee0904222019",
+    "fields": {
+        "service": "21860b5d-a86d-4932-ba22-32c0d342d0e7",
+        "identifier": "",
+        "start_time": "2020-05-15T19:01:55.375Z",
+        "last_seen": "2020-05-15T19:02:06.243Z",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:76.0) Gecko/20100101 Firefox/76.0",
+        "browser": "Firefox",
+        "device": "Mac",
+        "device_type": "DESKTOP",
+        "os": "Mac OS X",
+        "ip": "127.0.0.1",
+        "asn": "",
+        "country": "",
+        "longitude": null,
+        "latitude": null,
+        "time_zone": ""
+    }
+},
+{
+    "model": "analytics.session",
+    "pk": "5c58677d-f77a-444d-9d3f-a46811c698c5",
+    "fields": {
+        "service": "21860b5d-a86d-4932-ba22-32c0d342d0e7",
+        "identifier": "",
+        "start_time": "2020-05-18T15:25:52.484Z",
+        "last_seen": "2020-05-18T15:30:17.417Z",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36",
+        "browser": "Chrome",
+        "device": "Mac",
+        "device_type": "DESKTOP",
+        "os": "Mac OS X",
+        "ip": "127.0.0.1",
+        "asn": "",
+        "country": "",
+        "longitude": null,
+        "latitude": null,
+        "time_zone": ""
+    }
+},
+{
+    "model": "analytics.session",
+    "pk": "ab18a1a5-de92-40b7-b4c5-57e87535ddcc",
+    "fields": {
+        "service": "21860b5d-a86d-4932-ba22-32c0d342d0e7",
+        "identifier": "",
+        "start_time": "2020-05-15T15:08:11.667Z",
+        "last_seen": "2020-05-15T15:35:29.119Z",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:76.0) Gecko/20100101 Firefox/76.0",
+        "browser": "Firefox",
+        "device": "Mac",
+        "device_type": "DESKTOP",
+        "os": "Mac OS X",
+        "ip": "127.0.0.1",
+        "asn": "",
+        "country": "",
+        "longitude": null,
+        "latitude": null,
+        "time_zone": ""
+    }
+}
+]

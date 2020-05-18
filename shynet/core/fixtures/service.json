@@ -1,0 +1,19 @@
+[
+{
+    "model": "core.service",
+    "pk": "21860b5d-a86d-4932-ba22-32c0d342d0e7",
+    "fields": {
+        "name": "Demo",
+        "owner": 1,
+        "created": "2020-05-06T21:50:53.879Z",
+        "link": "",
+        "origins": "*",
+        "status": "AC",
+        "respect_dnt": false,
+        "collect_ips": true,
+        "ignored_ips": "",
+        "hide_referrer_regex": "",
+        "collaborators": []
+    }
+}
+]

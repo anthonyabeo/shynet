@@ -1,0 +1,62 @@
+[
+{
+    "model": "analytics.hit",
+    "pk": 1,
+    "fields": {
+        "session": "ab18a1a5-de92-40b7-b4c5-57e87535ddcc",
+        "initial": true,
+        "start_time": "2020-05-15T15:08:11.674Z",
+        "last_seen": "2020-05-15T15:08:11.674Z",
+        "heartbeats": 0,
+        "tracker": "JS",
+        "location": "http://localhost:8080/pixel.html",
+        "referrer": "",
+        "load_time": 164.0
+    }
+},
+{
+    "model": "analytics.hit",
+    "pk": 2,
+    "fields": {
+        "session": "ab18a1a5-de92-40b7-b4c5-57e87535ddcc",
+        "initial": false,
+        "start_time": "2020-05-15T15:08:14.377Z",
+        "last_seen": "2020-05-15T15:35:29.122Z",
+        "heartbeats": 16,
+        "tracker": "JS",
+        "location": "http://localhost:8080/pixel.html",
+        "referrer": "",
+        "load_time": 321.0
+    }
+},
+{
+    "model": "analytics.hit",
+    "pk": 3,
+    "fields": {
+        "session": "52b6bd51-1fec-46c5-bf9e-ee0904222019",
+        "initial": true,
+        "start_time": "2020-05-15T19:01:55.377Z",
+        "last_seen": "2020-05-15T19:02:06.246Z",
+        "heartbeats": 1,
+        "tracker": "JS",
+        "location": "http://localhost:8080/pixel.html",
+        "referrer": "",
+        "load_time": 333.0
+    }
+},
+{
+    "model": "analytics.hit",
+    "pk": 4,
+    "fields": {
+        "session": "5c58677d-f77a-444d-9d3f-a46811c698c5",
+        "initial": true,
+        "start_time": "2020-05-18T15:25:52.491Z",
+        "last_seen": "2020-05-18T15:30:17.420Z",
+        "heartbeats": 1,
+        "tracker": "JS",
+        "location": "http://localhost:8080/pixel.html",
+        "referrer": "",
+        "load_time": 221091.0
+    }
+}
+]
