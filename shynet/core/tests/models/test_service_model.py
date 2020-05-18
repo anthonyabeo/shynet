@@ -3,6 +3,8 @@ from django.test import TestCase
 from core.models import Service, User
 from ipaddress import IPv4Network
 
+from re import Pattern
+
 
 class ServiceModelTest(TestCase):
     fixtures = [
@@ -14,15 +16,12 @@ class ServiceModelTest(TestCase):
 
     def setUp(self):
         super().setUp()
-        # user1 = User.objects.create(email="potato@admin.com")
-        # self.service = Service.objects.create(name="service1", owner=user1)
         self.service = Service.objects.all()[0]
 
     def test_service_object_identifiable_by_name(self):
         self.assertEquals(self.service.__str__(), "Demo")
 
     def test_getting_of_ignored_network_list(self):
-        self.service = Service.objects.all()[0]
         ignored_networks = self.service.get_ignored_networks()
         self.assertEquals(len(ignored_networks), 0)
 
